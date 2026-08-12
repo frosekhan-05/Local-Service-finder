@@ -51,7 +51,7 @@ const Navigation = () => {
           {isLoggedIn ? (
             <>
               {user.role === 'customer' && <NotificationBell />}
-              <span className="user-welcome">Welcome, {user.email} ({user.role})</span>
+
               <button onClick={handleLogout} className="btn btn-outline btn-small">
                 Logout
               </button>
